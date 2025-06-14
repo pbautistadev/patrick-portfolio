@@ -189,11 +189,11 @@ function Abilities() {
       <h1 className="text-[30px] text-secondary font-bold">Mis habilidades</h1>
       <div className="grid md:w-4/5 grid-cols-3 content-center gap-4 mt-8 pt-8">
         {abilitiesLinks.map((link) => (
-          <div className="text-black p-4 rounded-md flex flex-col gap-4">
-            <div
-              key={link.id}
-              className=" text-black rounded-md flex flex-row gap-2 "
-            >
+          <div
+            key={link.id}
+            className="text-black p-4 rounded-md flex flex-col gap-4"
+          >
+            <div className=" text-black rounded-md flex flex-row gap-2 ">
               <svg
                 className="w-[25px] fill-current text-primary "
                 version="1.0"
