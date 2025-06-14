@@ -7,4 +7,10 @@ body {
 
 @theme{
   --color-primary: #2563EB;
+  --color-secondary: #1F2937;
+  --color-description: #4B5563;
+  --color-aboutme: #EFF6FF;
+  --color-textgray: #374151;
+  --color-copyright: #9CA3AF;
+  --color-textfooter: #D1D5DB;
 }
