@@ -121,7 +121,7 @@ const About = () => {
         </div>
       </div>
       <div className="w-full flex justify-center pt-15 pb-15">
-        <div className="lg:w-1/2 w-2/3 flex flex-col items-center gap-6">
+        <div className="lg:w-1/2  flex flex-col items-center gap-6">
           <h1 className="text-[30px] text-secondary font-bold">Sobre Mi</h1>
           <p className="text-[18px] text-textgray">
             Analista Programador con gran capacidad de aprendizaje y adaptación
@@ -130,7 +130,7 @@ const About = () => {
             trabajar bajo presión para ofrecer soluciones eficientes a desafíos
             complejos.
           </p>
-          <div className="grid md:w-full lg:grid-cols-3 grid-cols-2 content-center gap-4">
+          <div className="grid md:w-full lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 content-center gap-4">
             {aboutMeLinks.map((link) => (
               <div
                 key={link.id}
