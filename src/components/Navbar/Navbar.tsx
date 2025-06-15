@@ -2,10 +2,10 @@ import React from "react";
 import CV from "../../assets/pdf/patrickbautista_es.pdf";
 
 const navbarLinks = [
-  { id: 1, name: "Sobre Mí", path: "/" },
-  { id: 2, name: "Habilidades", path: "#" },
-  { id: 3, name: "Experiencia", path: "#" },
-  { id: 4, name: "Formacion", path: "#" },
+  { id: 1, name: "Sobre Mí", path: "#about" },
+  { id: 2, name: "Habilidades", path: "#abilities" },
+  { id: 3, name: "Experiencia", path: "#experience" },
+  { id: 4, name: "Formacion", path: "#formation" },
 ];
 
 const Navbar = () => {

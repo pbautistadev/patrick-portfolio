@@ -20,7 +20,7 @@ const Projects = () => {
         </p>
         <button
           type="button"
-          className="text-[16px] bg-primary text-white px-6 py-2 rounded-lg active:bg-sky-600 transition duration-300"
+          className=" hidden text-[16px] bg-primary text-white px-6 py-2 rounded-lg active:bg-sky-600 transition duration-300"
           onClick={() =>
             alert(
               "¡Gracias por tu interés! Te notificaré cuando los proyectos estén disponibles."

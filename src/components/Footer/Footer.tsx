@@ -1,9 +1,9 @@
 import React from "react";
 const footerLinks = [
   { id: 1, name: "Sobre Mí", path: "/" },
-  { id: 2, name: "Habilidades", path: "#" },
-  { id: 3, name: "Experiencia", path: "#" },
-  { id: 4, name: "Formacion", path: "#" },
+  { id: 2, name: "Habilidades", path: "#abilities" },
+  { id: 3, name: "Experiencia", path: "#experience" },
+  { id: 4, name: "Formacion", path: "#formation" },
 ];
 
 const footerContactLinks = [
