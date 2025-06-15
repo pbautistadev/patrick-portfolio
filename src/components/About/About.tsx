@@ -111,7 +111,7 @@ const About = () => {
             </a>
           </div>
         </div>
-        <div className=" flex justify-start items-start md:ml-20">
+        <div className=" flex justify-start items-start xl:ml-20">
           <div className="w-90 h-90  overflow-hidden">
             <img
               src={Foto}

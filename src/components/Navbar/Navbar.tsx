@@ -31,7 +31,7 @@ const Navbar = () => {
             </h1>
           </div>
         </div>
-        <div className="hidden md:block">
+        <div className="hidden xl:block">
           <ul>
             {navbarLinks.map((link) => (
               <li key={link.id} className="inline-block mx-6">
@@ -45,7 +45,7 @@ const Navbar = () => {
             ))}
           </ul>
         </div>
-        <div className="hidden md:block px-8">
+        <div className="hidden xl:block px-8">
           <a
             href={CV}
             target="_blank"
@@ -56,7 +56,7 @@ const Navbar = () => {
             Descargar CV
           </a>
         </div>
-        <div className="md:hidden">
+        <div className="xl:hidden">
           <button
             onClick={toggleMenu}
             className="text-gray-800 focus:outline-none"
@@ -88,7 +88,7 @@ const Navbar = () => {
       </div>
       <div
         className={`
-          md:hidden
+          xl:hidden
           absolute top-full left-0 right-0 
           bg-white shadow-lg z-20 
           transition-transform duration-300 ease-in-out 
