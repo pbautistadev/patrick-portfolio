@@ -1,4 +1,3 @@
-import React from "react";
 const footerLinks = [
   { id: 1, name: "Sobre Mí", path: "/" },
   { id: 2, name: "Habilidades", path: "#abilities" },

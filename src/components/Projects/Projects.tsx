@@ -1,5 +1,3 @@
-import React from "react";
-
 const Projects = () => {
   return (
     <div className=" flex flex-col items-center w-full bg-gradient-to-r from-gray-50 from-99% to-transparent to-99% pt-15 pb-15">

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import CV from "../../assets/pdf/patrickbautista_es.pdf";
 
 const navbarLinks = [
