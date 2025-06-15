@@ -1,4 +1,4 @@
-import Foto from "../../assets/foto-perfil.png";
+import Foto from "../../assets/foto-perfil-con-fondo.jpg";
 import CV from "../../assets/pdf/patrickbautista_es.pdf";
 
 const aboutMeLinks = [
@@ -49,9 +49,9 @@ const aboutMeLinks = [
 
 const About = () => {
   return (
-    <div className=" my-4 mx-8">
-      <div className="flex flex-col md:flex-row items-center md:items-center gap-4 pb-15 pt-15">
-        <div className="basis-1/2 flex flex-col items-start text-left gap-4">
+    <div className=" my-4 mx-8 items-center justify-items-center">
+      <div className="flex flex-col md:flex-row items-center md:items-center gap-10 pb-15 pt-15">
+        <div className=" flex flex-col items-start text-left gap-4">
           <h1 className="text-[48px] font-bold leading-none">
             Patrick Junior Bautista Toledo
           </h1>
@@ -111,9 +111,12 @@ const About = () => {
             </a>
           </div>
         </div>
-        <div className="basis-1/2 flex justify-start items-start md:ml-20">
+        <div className=" flex justify-start items-start md:ml-20">
           <div className="w-90 h-90  overflow-hidden">
-            <img src={Foto} className="w-full h-full object-cover " />
+            <img
+              src={Foto}
+              className="w-full h-full object-cover rounded-4xl shadow-lg"
+            />
           </div>
         </div>
       </div>

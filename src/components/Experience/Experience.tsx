@@ -29,7 +29,7 @@ function Experience() {
       </h1>
       <div className="w-[calc(55%+4rem)] box-border  flex flex-col items-center justify-center gap-8 my-8   ">
         {experienceInfo.map((link) => (
-          <div className="bg-white p-8 flex flex-col gap-5">
+          <div key={link.id} className="bg-white p-8 flex flex-col gap-5">
             <div className="w-full flex flex-row justify-between">
               <div>
                 <p className="text-[24px] text-primary font-bold">
