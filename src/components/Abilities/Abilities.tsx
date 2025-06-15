@@ -185,7 +185,7 @@ function Abilities() {
   return (
     <div className="flex flex-col items-center w-full pt-15 pb-15">
       <h1 className="text-[30px] text-secondary font-bold">Mis habilidades</h1>
-      <div className="grid md:w-6/8 md:grid-cols-3 grid-cols-2 content-center gap-4 mt-8 pt-8 md:px-0 px-8">
+      <div className="grid md:w-6/8 md:grid-cols-3 grid-cols-2 content-center gap-4 mt-8 pt-8 md:px-0 px-3">
         {abilitiesLinks.map((link) => (
           <div
             key={link.id}
@@ -217,17 +217,19 @@ function Abilities() {
                     key={ability.id}
                     className="text-[16px] text-primary mb-5"
                   >
-                    <div className="flex flex-row justify-between">
+                    <div className="flex flex-row justify-between gap-2">
                       <p
                         className={
                           ability.level.length > 0
-                            ? "text-secondary font-bold"
+                            ? "sm:text-secondary sm:font-bold "
                             : ""
                         }
                       >
                         {ability.name}
                       </p>
-                      {ability.level.length > 0 ? `${ability.level}` : ""}
+                      <p className="hidden sm:block">
+                        {ability.level.length > 0 ? `${ability.level}` : ""}
+                      </p>
                     </div>
                   </li>
                 ))}

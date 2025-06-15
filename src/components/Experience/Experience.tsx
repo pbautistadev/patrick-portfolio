@@ -28,7 +28,7 @@ function Experience() {
       <div className="md:w-[calc(55%+4rem)] w-[calc(100%-2rem)] box-border  flex flex-col items-center justify-center gap-8 my-8   ">
         {experienceInfo.map((link) => (
           <div key={link.id} className="bg-white p-8 flex flex-col gap-5">
-            <div className="w-full flex flex-row justify-between">
+            <div className="w-full flex sm:flex-row flex-col justify-between">
               <div>
                 <p className="text-[24px] text-primary font-bold">
                   {link.name}
@@ -37,7 +37,7 @@ function Experience() {
                   {link.company}
                 </p>
               </div>
-              <div className="w-full text-description text-[16px] justify-items-end">
+              <div className="w-full text-description text-[16px] sm:justify-items-end">
                 <time>{link.date}</time>
                 <p>{link.city}</p>
               </div>
