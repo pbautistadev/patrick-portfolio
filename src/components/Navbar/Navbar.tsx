@@ -1,4 +1,5 @@
 import React from "react";
+import CV from "../../assets/pdf/patrickbautista_es.pdf";
 
 const navbarLinks = [
   { id: 1, name: "Sobre Mí", path: "/" },
@@ -40,12 +41,19 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="px-8">
-          <button
-            type="button"
-            className="bg-primary text-white px-6 py-2 rounded-lg active:bg-sky-600 transition duration-300"
+          <a
+            href={CV}
+            target="_blank"
+            rel="noopener noreferrer"
+            download="cv_patrickbautista.pdf"
           >
-            Descargar CV
-          </button>
+            <button
+              type="button"
+              className="bg-primary text-white px-6 py-2 rounded-lg active:bg-sky-600 transition duration-300"
+            >
+              Descargar CV
+            </button>
+          </a>
         </div>
       </div>
     </nav>

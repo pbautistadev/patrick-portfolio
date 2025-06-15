@@ -1,4 +1,5 @@
 import Foto from "../../assets/foto-perfil.png";
+import CV from "../../assets/pdf/patrickbautista_es.pdf";
 
 const aboutMeLinks = [
   {
@@ -70,12 +71,19 @@ const About = () => {
               </button>
             </div>
             <div className="flex flex-col md:flex-row ">
-              <button
-                type="button"
-                className="bg-white text-primary px-7 py-3 rounded-md border-primary border-1 active:bg-sky-600 active:text-white transition duration-300"
+              <a
+                href={CV}
+                target="_blank"
+                rel="noopener noreferrer"
+                download="cv_patrickbautista.pdf"
               >
-                Descargar CV
-              </button>
+                <button
+                  type="button"
+                  className="bg-white text-primary px-7 py-3 rounded-md border-primary border-1 active:bg-sky-600 active:text-white transition duration-300"
+                >
+                  Descargar CV
+                </button>
+              </a>
             </div>
           </div>
           <div className="flex flex-col md:flex-row gap-4">
