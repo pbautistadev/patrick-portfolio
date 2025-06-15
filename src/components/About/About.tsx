@@ -50,7 +50,7 @@ const aboutMeLinks = [
 const About = () => {
   return (
     <div className=" my-4 mx-8 items-center justify-items-center">
-      <div className="flex flex-col md:flex-row items-center md:items-center gap-10 pb-15 pt-15">
+      <div className="flex flex-col md:flex-row items-center md:items-center gap-10 pb-15 pt-15 mx-4">
         <div className=" flex flex-col items-start text-left gap-4">
           <h1 className="text-[48px] font-bold leading-none">
             Patrick Junior Bautista Toledo
