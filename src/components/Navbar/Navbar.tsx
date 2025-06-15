@@ -1,16 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import CV from "../../assets/pdf/patrickbautista_es.pdf";
 
 const navbarLinks = [
-  { id: 1, name: "Sobre Mí", path: "#about" },
+  { id: 1, name: "Sobre Mí", path: "/" },
   { id: 2, name: "Habilidades", path: "#abilities" },
   { id: 3, name: "Experiencia", path: "#experience" },
   { id: 4, name: "Formacion", path: "#formation" },
 ];
 
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
   return (
-    <nav>
+    <nav className="relative">
       <div className="flex justify-between items-center p-6 bg-white">
         <div className="flex items-center">
           <svg
@@ -26,7 +31,7 @@ const Navbar = () => {
             </h1>
           </div>
         </div>
-        <div>
+        <div className="hidden md:block">
           <ul>
             {navbarLinks.map((link) => (
               <li key={link.id} className="inline-block mx-6">
@@ -40,21 +45,82 @@ const Navbar = () => {
             ))}
           </ul>
         </div>
-        <div className="px-8">
+        <div className="hidden md:block px-8">
           <a
             href={CV}
             target="_blank"
             rel="noopener noreferrer"
             download="cv_patrickbautista.pdf"
+            className="bg-primary text-white px-6 py-3 rounded-lg active:bg-sky-600 transition duration-300"
           >
-            <button
-              type="button"
-              className="bg-primary text-white px-6 py-2 rounded-lg active:bg-sky-600 transition duration-300"
-            >
-              Descargar CV
-            </button>
+            Descargar CV
           </a>
         </div>
+        <div className="md:hidden">
+          <button
+            onClick={toggleMenu}
+            className="text-gray-800 focus:outline-none"
+          >
+            <svg
+              className="text-primary w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              {isMenuOpen ? (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              ) : (
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                ></path>
+              )}
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div
+        className={`
+          md:hidden
+          absolute top-full left-0 right-0 
+          bg-white shadow-lg z-20 
+          transition-transform duration-300 ease-in-out 
+          ${isMenuOpen ? "translate-y-0" : "-translate-y-full"}
+          ${isMenuOpen ? "block" : "hidden"}
+        `}
+      >
+        <ul className="flex flex-col items-center space-y-4 p-6">
+          {navbarLinks.map((link) => (
+            <li key={link.id}>
+              <a
+                href={link.path}
+                className="block text-[16px] font-bold text-gray-800 hover:text-primary"
+                onClick={() => setIsMenuOpen(false)}
+              >
+                {link.name}
+              </a>
+            </li>
+          ))}
+          <li className="mt-8">
+            <a
+              href={CV}
+              target="_blank"
+              rel="noopener noreferrer"
+              download="cv_patrickbautista.pdf"
+              className=" bg-primary text-white px-6 py-3 rounded-lg text-center active:bg-sky-600 transition duration-300"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Descargar CV
+            </a>
+          </li>
+        </ul>
       </div>
     </nav>
   );

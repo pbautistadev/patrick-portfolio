@@ -6,7 +6,7 @@ import Projects from "../Projects/Projects";
 
 const Hero = () => {
   return (
-    <nav>
+    <div>
       <section id="about">
         <About />
       </section>
@@ -22,7 +22,7 @@ const Hero = () => {
       <section id="formation">
         <Formation />
       </section>
-    </nav>
+    </div>
   );
 };
 

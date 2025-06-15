@@ -187,7 +187,7 @@ function Abilities() {
   return (
     <div className="flex flex-col items-center w-full pt-15 pb-15">
       <h1 className="text-[30px] text-secondary font-bold">Mis habilidades</h1>
-      <div className="grid md:w-4/5 grid-cols-3 content-center gap-4 mt-8 pt-8">
+      <div className="grid w-6/8 md:grid-cols-3 grid-cols-2 content-center gap-4 mt-8 pt-8">
         {abilitiesLinks.map((link) => (
           <div
             key={link.id}
@@ -210,8 +210,8 @@ function Abilities() {
             <div>
               <ul
                 className={
-                  " content-center  " +
-                  (link.isColumn ? "grid grid-cols-3" : "row-auto")
+                  " content-center  row-auto" +
+                  (link.isColumn ? "md:grid grid-cols-3" : "md:row-auto")
                 }
               >
                 {link.abilities.map((ability) => (

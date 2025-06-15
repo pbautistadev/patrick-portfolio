@@ -23,7 +23,7 @@ const experienceInfo = [
 
 function Experience() {
   return (
-    <div className=" flex flex-col items-center bg-gradient-to-r from-gray-50 from-99% to-transparent to-99% pt-15 pb-15 mx-8">
+    <div className=" flex flex-col items-center bg-gradient-to-r from-gray-50 from-99% to-transparent to-99% pt-15 pb-15">
       <h1 className="text-[30px] text-secondary font-bold">
         Experiencia Laboral
       </h1>

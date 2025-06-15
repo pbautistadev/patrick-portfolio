@@ -61,14 +61,14 @@ const About = () => {
           <p className="text-[18px] text-description">
             "Soluciones eficientes para desafíos complejos."
           </p>
-          <div className="flex flex-col md:flex-row gap-4">
+          <div className="flex flex-row gap-4">
             <div className="flex flex-col md:flex-row ">
-              <button
-                type="button"
+              <a
+                href="https://wa.me/393514136725?text=%C2%A1Hola%21%20Vi%20tu%20perfil%20de%20programador%20y%20me%20result%C3%B3%20muy%20interesante.%20Me%20gustar%C3%ADa%20conversar%20contigo%20sobre%20posibles%20oportunidades."
                 className="bg-primary text-white px-7 py-3 rounded-md border-primary border-1 active:bg-sky-600 transition duration-300"
               >
                 Contactame
-              </button>
+              </a>
             </div>
             <div className="flex flex-col md:flex-row ">
               <a
@@ -76,20 +76,16 @@ const About = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 download="cv_patrickbautista.pdf"
+                className="bg-white text-primary px-7 py-3 rounded-md border-primary border-1 active:bg-sky-600 active:text-white transition duration-300"
               >
-                <button
-                  type="button"
-                  className="bg-white text-primary px-7 py-3 rounded-md border-primary border-1 active:bg-sky-600 active:text-white transition duration-300"
-                >
-                  Descargar CV
-                </button>
+                Descargar CV
               </a>
             </div>
           </div>
-          <div className="flex flex-col md:flex-row gap-4">
-            <div className="flex flex-row gap-2">
+          <div className="flex flex-row gap-4">
+            <a className="flex flex-row gap-2 p-2">
               <svg
-                className="w-[20px] fill-current text-primary ml-3"
+                className="w-[20px] fill-current text-primary "
                 version="1.0"
                 viewBox="0 0 1000 1000"
               >
@@ -99,17 +95,20 @@ const About = () => {
               <p className="text-textgray text-[16px]">
                 patrickbautista30@gmail.com
               </p>
-            </div>
-            <div className="flex flex-row gap-2">
+            </a>
+            <a
+              href="https://wa.me/393514136725?text=%C2%A1Hola%21%20Vi%20tu%20perfil%20de%20programador%20y%20me%20result%C3%B3%20muy%20interesante.%20Me%20gustar%C3%ADa%20conversar%20contigo%20sobre%20posibles%20oportunidades."
+              className="flex flex-row gap-2 hover:bg-gray-200 transition duration-300 rounded-md p-2"
+            >
               <svg
-                className="w-[20px] fill-current text-primary ml-3"
+                className="w-[20px] fill-current text-primary "
                 version="1.0"
                 viewBox="0 0 1000 1000"
               >
                 <path d="M109.1 65C92.9 69.3 77 82.3 69.7 97.2 62.4 112.2 63 76 63 500c0 335.4.2 383.3 1.5 388.8 4.8 20.4 20.3 37.5 41.2 45.5l5.8 2.2 385.3.3c428.2.2 391.1.8 406.2-6.6 10.5-5.1 22.2-16.8 27.3-27.4 7.3-15.1 6.7 21.2 6.7-402.8s.6-387.7-6.7-402.8c-5.1-10.6-16.8-22.3-27.3-27.4-15-7.4 21.6-6.8-403.5-6.7-375.3 0-383.1 0-390.4 1.9zm171.4 124.7c17 4.3 32.1 14.6 43.1 29.3 8.8 11.8 13.5 27.1 13.5 43.5 0 22.1-7.9 40.8-23.4 55.1-19.5 18.1-47.1 24.7-72.6 17.4-26-7.4-46.9-29.8-52.7-56.4-2.4-11.2-1.6-28.2 2-39.1 7.3-22.6 27.6-42.5 50.2-49.1 12.3-3.5 27.7-3.8 39.9-.7zm397.2 195.4c32 2.6 60.2 11.9 78.3 25.7 8 6.1 18.5 16.7 24.5 24.7 5.9 7.9 15.7 27.6 19.5 39.5 6.1 18.7 10 41.2 12 68.5.6 8.4 1 65 1 141.7V813H683V699.7c0-62.2-.5-118.7-1-125.3-2.2-28.1-9.6-48.2-22.1-60.4-5.6-5.4-10.6-8.2-20.4-11.6-7.3-2.6-9.2-2.8-23-2.9-18 0-26.7 1.7-38.8 7.7-14.6 7.3-25 20-31.4 38.4-7.6 21.9-8.3 35.1-8.3 164.1V813H408V395h125l.2 28.7.3 28.8 2-3.3c4.3-7.2 14.5-20 20.6-25.8 31.2-29.6 71.9-42.5 121.6-38.3zM328 604v209H197V395h131v209z" />
               </svg>
               <p className="text-textgray text-[16px]">LinkedIn</p>
-            </div>
+            </a>
           </div>
         </div>
         <div className="basis-1/2 flex justify-start items-start md:ml-20">
@@ -119,7 +118,7 @@ const About = () => {
         </div>
       </div>
       <div className="w-full flex justify-center pt-15 pb-15">
-        <div className="md:w-1/2  flex flex-col items-center gap-6">
+        <div className="lg:w-1/2 w-2/3 flex flex-col items-center gap-6">
           <h1 className="text-[30px] text-secondary font-bold">Sobre Mi</h1>
           <p className="text-[18px] text-textgray">
             Analista Programador con gran capacidad de aprendizaje y adaptación
@@ -128,7 +127,7 @@ const About = () => {
             trabajar bajo presión para ofrecer soluciones eficientes a desafíos
             complejos.
           </p>
-          <div className="grid md:w-full grid-cols-3 content-center gap-4">
+          <div className="grid md:w-full lg:grid-cols-3 grid-cols-2 content-center gap-4">
             {aboutMeLinks.map((link) => (
               <div
                 key={link.id}
