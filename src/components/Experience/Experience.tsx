@@ -25,7 +25,7 @@ function Experience() {
       <h1 className="text-[30px] text-secondary font-bold">
         Experiencia Laboral
       </h1>
-      <div className="w-[calc(55%+4rem)] box-border  flex flex-col items-center justify-center gap-8 my-8   ">
+      <div className="md:w-[calc(55%+4rem)] w-[calc(100%-0.5rem)] box-border  flex flex-col items-center justify-center gap-8 my-8   ">
         {experienceInfo.map((link) => (
           <div key={link.id} className="bg-white p-8 flex flex-col gap-5">
             <div className="w-full flex flex-row justify-between">
@@ -37,7 +37,7 @@ function Experience() {
                   {link.company}
                 </p>
               </div>
-              <div className="text-description text-[16px] justify-items-end">
+              <div className="w-full text-description text-[16px] justify-items-end">
                 <time>{link.date}</time>
                 <p>{link.city}</p>
               </div>

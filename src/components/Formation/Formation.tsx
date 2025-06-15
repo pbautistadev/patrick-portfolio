@@ -23,9 +23,12 @@ function Formation() {
       <h1 className="text-[30px] text-secondary font-bold">
         Formación Académica
       </h1>
-      <div className="w-[calc(70%+4rem)] box-border  flex flex-row items-center justify-evenly gap-8 my-8   ">
+      <div className="w-[calc(70%+4rem)] box-border  flex flex-col md:flex-row items-center justify-evenly gap-8 my-8   ">
         {formationInfo.map((link) => (
-          <div key={link.id} className="flex flex-row justify-start gap-4">
+          <div
+            key={link.id}
+            className="md:w-auto w-full flex flex-row justify-start gap-4"
+          >
             <div>
               <svg
                 className="w-[50px] fill-current text-primary bg-sky-200 p-2 rounded-md"
