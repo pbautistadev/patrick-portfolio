@@ -116,8 +116,8 @@ function Footer() {
         </div>
       </div>
       <div className="w-7/8 lg:w-4/5 h-2 bg-textgray my-4"></div>
-      <div>
-        <p className="text-copyright text-[16px]">
+      <div className="px-3">
+        <p className="text-copyright text-[16px] text-center">
           © 2025 Patrick Junior Bautista Toledo. Todos los derechos reservados.
         </p>
       </div>
